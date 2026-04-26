@@ -500,7 +500,7 @@ footer{background:var(--ink);border-top:3px solid var(--ink);padding:40px clamp(
       <p id="ab-contact-desc">Have a story tip, correction, or want to join the team? We'd love to hear from you.</p>
     </div>
     <a href="https://www.facebook.com/NewsbytesICCT" target="blank">
-      <button class="contact-email-btn" id="ab-contact-btn" onclick="handleContactClick()">Contact Us</button>
+      <button class="contact-email-btn" id="ab-contact-btn">Contact Us</button>
     </a>
   </div>
 </div>
@@ -737,8 +737,10 @@ footer{background:var(--ink);border-top:3px solid var(--ink);padding:40px clamp(
       <h4>Publication</h4>
       <div class="footer-nav-links">
         <button onclick="showAbout()">About Us</button>
-        <button onclick="handleContactClick()">Contact</button>
-        <button onclick="toast('Email us to join the team!','info')">Join the Team</button>
+        <a href="https://www.facebook.com/NewsbytesICCT" target="blank">
+          <button>Contact</button>
+        </a>
+        <button onclick="toast('Email us at icctnewsbytes@gmail.com to join the team!','info')">Join the Team</button>
       </div>
     </div>
   </div>
@@ -818,7 +820,7 @@ window.handleLogoTap = function(){
 window.toast = function(msg,type='success'){
   const t=document.getElementById('toast');
   t.textContent=msg; t.className='toast '+type+' show';
-  setTimeout(()=>t.classList.remove('show'),3200);
+  setTimeout(()=>t.classList.remove('show'),4200);
 };
 
 // ── LOADING ──
@@ -1077,10 +1079,6 @@ window.saveContactEdit = async function(){
     btnLabel:document.getElementById('ct-btn-label').value.trim(),email:document.getElementById('ct-email').value.trim()};
   await setDoc(doc(db,'settings','contact'),c);
   closeContactEdit(); toast('Contact section updated! ✓','success');
-};
-window.handleContactClick = function(){
-  const email=(contactData.email)||'icctnewsbytes@gmail.com';
-  window.location.href='mailto:'+email;
 };
 
 // ══════════════════════════════════════════
