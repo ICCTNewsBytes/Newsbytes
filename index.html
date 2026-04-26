@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Newsbytes</title>
+<title>NewsBytes</title>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@500;600;700;800&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -48,7 +48,7 @@ body{font-family:'Barlow',sans-serif;background:var(--bg);color:var(--ink);min-h
 
 /* ═══ MASTHEAD ═══ */
 .masthead{background:var(--paper);border-bottom:3px double var(--ink);padding:28px clamp(1rem,4vw,4rem) 0;position:relative;overflow:hidden}
-.masthead::after{content:'THE NEWSBYTES';position:absolute;bottom:-22px;left:50%;transform:translateX(-50%);font-family:'Barlow Condensed',sans-serif;font-size:clamp(80px,14vw,170px);font-weight:800;color:rgba(0,0,0,.028);letter-spacing:-.02em;white-space:nowrap;pointer-events:none;user-select:none}
+.masthead::after{content:'NEWSBYTES';position:absolute;bottom:-22px;left:50%;transform:translateX(-50%);font-family:'Barlow Condensed',sans-serif;font-size:clamp(80px,14vw,170px);font-weight:800;color:rgba(0,0,0,.028);letter-spacing:-.02em;white-space:nowrap;pointer-events:none;user-select:none}
 .masthead-inner{max-width:1320px;margin:0 auto;display:flex;flex-direction:column;align-items:center;padding-bottom:24px;gap:6px}
 /* Kicker row */
 .mast-kicker-row{display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:10px}
@@ -353,7 +353,7 @@ footer{background:var(--ink);border-top:3px solid var(--ink);padding:40px clamp(
 
 <!-- LOADING SCREEN -->
 <div id="loading-screen">
-  <div class="loading-logo">The Newsbytes</div>
+  <div class="loading-logo">NewsBytes</div>
   <div class="loading-spinner"></div>
   <div class="loading-sub">Loading stories…</div>
 </div>
@@ -363,7 +363,7 @@ footer{background:var(--ink);border-top:3px solid var(--ink);padding:40px clamp(
   <div class="topbar-left">
     <span id="live-date"></span>
     <span class="topbar-sep">|</span>
-    <span>University Campus Edition</span>
+    <span>ICCT COLLEGES</span>
   </div>
   <div class="topbar-right">
     <div class="adm-indicator" id="adm-indicator">Admin Mode</div>
@@ -405,7 +405,7 @@ footer{background:var(--ink);border-top:3px solid var(--ink);padding:40px clamp(
         </label>
         <button class="mast-logo-rm" id="mast-rm-left" onclick="removeSlotLogo('left')" title="Remove">✕</button>
       </div>
-      <div class="logo" id="logo-center" onclick="handleLogoTap()">The Newsbytes</div>
+      <div class="logo" id="logo-center" onclick="handleLogoTap()">NewsBytes</div>
       <div class="mast-logo-slot" id="mast-slot-right">
         <img class="mast-logo-img" id="mast-img-right" src="" alt="">
         <label class="mast-logo-add" id="mast-add-right" title="Upload right logo">
@@ -415,7 +415,7 @@ footer{background:var(--ink);border-top:3px solid var(--ink);padding:40px clamp(
         <button class="mast-logo-rm" id="mast-rm-right" onclick="removeSlotLogo('right')" title="Remove">✕</button>
       </div>
     </div>
-    <p class="mast-tagline">Your campus, your stories, your voice</p>
+    <p class="mast-tagline">The pules of campus, Delivered in bytes</p>
   </div>
 </header>
 
@@ -465,7 +465,7 @@ footer{background:var(--ink);border-top:3px solid var(--ink);padding:40px clamp(
       <div class="recent-list" id="sb-recent"></div>
     </div>
     <div class="sb-block about-teaser">
-      <div class="sb-head">About The Newsbytes</div>
+      <div class="sb-head">About NewsBytes</div>
       <p>The official student-run publication of our university — keeping the campus community informed and connected.</p>
       <button class="read-about" onclick="showAbout()">Learn More →</button>
     </div>
@@ -477,14 +477,14 @@ footer{background:var(--ink);border-top:3px solid var(--ink);padding:40px clamp(
   <div class="about-hero" style="position:relative">
     <button class="about-edit-btn" onclick="openAboutEdit()">✏ Edit This Section</button>
     <div class="about-hero-kicker" id="ab-kicker">Est. 2024 · Student Publication</div>
-    <h1 id="ab-title">About The Newsbytes</h1>
+    <h1 id="ab-title">About NewsBytes</h1>
     <p id="ab-desc">We are the official campus news publication — student-written, student-run, and dedicated to keeping our university community informed, inspired, and connected.</p>
   </div>
   <div class="about-grid">
     <div class="about-card"><div class="about-card-icon">📰</div><h3>Our Mission</h3><p id="ab-mission">To deliver accurate, timely, and relevant campus news that reflects the diverse voices of our university community.</p></div>
-    <div class="about-card"><div class="about-card-icon">🎓</div><h3>Student-Run</h3><p id="ab-student">Every story is written, edited, and published by students. The Newsbytes is a platform for student journalists to hone their craft.</p></div>
+    <div class="about-card"><div class="about-card-icon">🎓</div><h3>Student-Run</h3><p id="ab-student">Every story is written, edited, and published by students. NewsBytes is a platform for student journalists to hone their craft.</p></div>
     <div class="about-card"><div class="about-card-icon">🏫</div><h3>Campus-Focused</h3><p id="ab-campus">We cover academics, events, sports, student life, and announcements — all in one place, updated regularly.</p></div>
-    <div class="about-card"><div class="about-card-icon">🤝</div><h3>Community First</h3><p id="ab-community">The Newsbytes exists to strengthen our university community by creating a shared space where everyone stays informed.</p></div>
+    <div class="about-card"><div class="about-card-icon">🤝</div><h3>Community First</h3><p id="ab-community">NewsBytes exists to strengthen our university community by creating a shared space where everyone stays informed.</p></div>
   </div>
   <div class="about-team">
     <div class="about-team-head">
@@ -499,7 +499,9 @@ footer{background:var(--ink);border-top:3px solid var(--ink);padding:40px clamp(
       <h2 id="ab-contact-title">Get In Touch</h2>
       <p id="ab-contact-desc">Have a story tip, correction, or want to join the team? We'd love to hear from you.</p>
     </div>
-    <button class="contact-email-btn" id="ab-contact-btn" onclick="handleContactClick()">Contact Us</button>
+    <a href="https://www.facebook.com/NewsbytesICCT" target="blank">
+      <button class="contact-email-btn" id="ab-contact-btn" onclick="handleContactClick()">Contact Us</button>
+    </a>
   </div>
 </div>
 
@@ -717,7 +719,7 @@ footer{background:var(--ink);border-top:3px solid var(--ink);padding:40px clamp(
 <footer>
   <div class="footer-inner">
     <div class="footer-brand">
-      <div class="footer-logo">The Newsbytes</div>
+      <div class="footer-logo">NewsBytes</div>
       <p>The official student-run campus publication. Keeping the university community informed and connected.</p>
     </div>
     <div class="footer-nav">
@@ -741,7 +743,7 @@ footer{background:var(--ink);border-top:3px solid var(--ink);padding:40px clamp(
     </div>
   </div>
   <div class="footer-copy">
-    <span>© <span id="footer-year"></span> The Newsbytes · University Campus Publication</span>
+    <span>© <span id="footer-year"></span> NewsBytes · ICCT Colleges</span>
   </div>
 </footer>
 
@@ -1040,7 +1042,7 @@ window.del = async function(id){
 // ══════════════════════════════════════════
 window.openAboutEdit = function(){
   if(!isAdmin)return;
-  const d={...{kicker:'Est. 2024 · Student Publication',title:'About The Newsbytes',desc:'',mission:'',student:'',campus:'',community:''},...aboutData};
+  const d={...{kicker:'Est. 2024 · Student Publication',title:'About NewsBytes',desc:'',mission:'',student:'',campus:'',community:''},...aboutData};
   document.getElementById('ab-e-kicker').value=d.kicker;
   document.getElementById('ab-e-title').value=d.title;
   document.getElementById('ab-e-desc').value=d.desc;
@@ -1077,7 +1079,7 @@ window.saveContactEdit = async function(){
   closeContactEdit(); toast('Contact section updated! ✓','success');
 };
 window.handleContactClick = function(){
-  const email=(contactData.email)||'newsbytes@university.edu';
+  const email=(contactData.email)||'icctnewsbytes@gmail.com';
   window.location.href='mailto:'+email;
 };
 
@@ -1284,7 +1286,7 @@ function renderGrid(list){
 }
 
 function renderAbout(){
-  const d={...{kicker:'Est. 2024 · Student Publication',title:'About The Newsbytes',desc:'We are the official campus news publication.',mission:'To deliver accurate, timely, and relevant campus news.',student:'Every story is written, edited, and published by students.',campus:'We cover academics, events, sports, student life, and announcements.',community:'The Newsbytes exists to strengthen our university community.'},...aboutData};
+  const d={...{kicker:'Est. 2024 · Student Publication',title:'About NewsBytes',desc:'We are the official campus news publication.',mission:'To deliver accurate, timely, and relevant campus news.',student:'Every story is written, edited, and published by students.',campus:'We cover academics, events, sports, student life, and announcements.',community:'NewsBytes exists to strengthen our university community.'},...aboutData};
   const c={...{title:'Get In Touch',desc:'Have a story tip or want to join the team?',btnLabel:'Contact Us',email:'newsbytes@university.edu'},...contactData};
   document.getElementById('ab-kicker').textContent=d.kicker;
   document.getElementById('ab-title').textContent=d.title;
